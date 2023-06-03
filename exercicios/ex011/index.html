@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mìdias em HTML5</title>
+</head>
+<body>
+ <h1>IMAGENS DINAMICAS </h1>   
+ <P>Tente abrir esse site em varios dispositivos diferentes ou simplesmente aumente e diminuir o seu navegador</P>
+
+ <!-- para adicionar uma imagem em um site para que ela se adapti ao aparelho que esta execultando de acordo com o tamanho, utiliza-se a tag "picture" com a tag "source midia type" e assim acresenta a imagen em seus tamanho médio, pequeno e grande como se ver abaixo: -->
+ <picture>
+    <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+<source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+    <img src="imagens/foto-g.png" alt="imagem flexivel">
+
+    <!-- para adicionar um audio usar a tag "audio controls"  com a tag "source src type" da mesm formo como no casa da imagem é aconcelhado ultiliza  mecanismos para que esse se adapite ao navegador do usuario(estudar mais sobre o assunto) -->
+    <h1>Ouça um audio</h1>
+   
+   <audio controls>
+    <source src="midia/mp3.mp3" type="audio/mpeg">
+    <source src="midia/mp3.ogg" type="audio/ogg">
+    <source src="midia/mp3.wav" type="audio/wav">
+   </audio>
+    
+    
+ </picture>
+ <h1>Agora vamos assistir um vidio</h1>
+
+<video controls src=""></video>
+
+</body>
+</html>
